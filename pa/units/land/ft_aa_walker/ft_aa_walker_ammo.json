@@ -1,12 +1,12 @@
 
 {
   "armor_damage_map": {
-    "AT_Vehicle": 0.5,
-    "AT_Bot": 0.5,
-    "AT_Naval": 0.5,
-    "AT_Commander": 0.5,
-    "AT_Hover": 0.5,
-    "AT_Structure": 0.5
+    "AT_Vehicle": 0.2
+    "AT_Bot": 0.2
+    "AT_Naval": 0.2
+    "AT_Commander": 0.2
+    "AT_Hover": 0.2
+    "AT_Structure": 0.2
   },
   "audio_loop": "/SE/Movement/missile/catapult_missile_fly_loop",
   "base_spec": "/pa/ammo/base_shell/base_shell.json",
