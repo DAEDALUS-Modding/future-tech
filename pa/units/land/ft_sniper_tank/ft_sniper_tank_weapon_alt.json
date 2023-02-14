@@ -1,5 +1,5 @@
 {
-    "ammo_id": "/pa/units/land/tank_laser_adv/tank_laser_adv_ammo.json",
+    "ammo_id": "/pa/units/land/ft_sniper_tank/ft_sniper_tank_ammo_alt.json",
     "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
     "ammo_capacity": 40000,
     "ammo_demand": 1000,
