@@ -1,0 +1,116 @@
+{
+    "display_name": "Sniper Tank",
+    "si_icon":"ft_sniper_tank",
+    "description": "!LOC:Slow,expensive,long Range,has a Alt-fire Power Shot",
+    "TEMP_texelinfo": 10.3794,
+    "attachable": {
+      "offsets": {
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "head": [
+          0,
+          0,
+          3.4
+        ]
+      }
+    },
+    "audio": {
+      "loops": {
+        "move": {
+          "cue": "/SE/Movement/veh/tank_leveler_loop_T2",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      },
+      "selection_response": {
+        "cue": "/SE/Selection/veh/tank_leveler_T2"
+      }
+    },
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "build_metal_cost": 2000,
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/veh"
+      },
+      "fired": {
+        "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
+        "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle /pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/Veh",
+        "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+        "effect_scale": 1.0
+      }
+    },
+    "guard_layer": "WL_AnySurface",
+    "max_health": 500,
+    "mesh_bounds": [
+      6.8,
+      7.5,
+      3.6
+    ],
+    "model": {
+      "filename": "/pa/units/land/ft_sniper_tank/ft_sniper_tank.papa",
+      "animations": {
+        "walk": "/pa/units/land/ft_sniper_tank/ft_sniper_tank_move.papa",
+        "idle": "/pa/units/land/ft_sniper_tank/ft_sniper_tank_idle.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json"
+    },
+    "navigation": {
+      "type": "land-small",
+      "acceleration": 100,
+      "brake": 100,
+      "move_speed": 10,
+      "turn_speed": 60
+    },
+    "physics": {
+      "radius": 5
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 100
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 14.0
+    },
+    "tools": [
+      {
+        "spec_id": "/pa/units/land/ft_sniper_tank/ft_sniper_tank_tool_weapon.json",
+        "aim_bone": "bone_turret",
+        "muzzle_bone": "socket_muzzle",
+        "primary_weapon": true
+
+      },
+      {
+        "spec_id": "/pa/units/land/ft_sniper_tank/ft_sniper_tank_tool_weapon.json",
+        "aim_bone": "bone_turret",
+        "muzzle_bone": "socket_muzzle",
+        "secondary_weapon":true
+      }
+    ],
+    "transportable": {
+      "size": 1
+    },
+    "unit_types": [
+      "UNITTYPE_Custom3",
+      "UNITTYPE_Tank",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Land",
+      "UNITTYPE_Advanced",
+      "UNITTYPE_FactoryBuild"
+    ]
+  }

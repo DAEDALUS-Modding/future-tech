@@ -1,0 +1,112 @@
+{
+    "display_name": "Grinder Extractor",
+    "si_icon":"ft_grinder_mex",
+    "description": "Grinds stuff.",
+    "TEMP_texelinfo": 15.0973,
+    "area_build_type": "Sphere",
+    "atrophy_cool_down": 15.0,
+    "atrophy_rate": 2.5,
+    "audio": {
+      "selection_response": {
+        "cue": "/SE/Selection/structure/metal"
+      }
+    },
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 300,
+    "consumption": {
+      "energy": 0
+    },
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/metal"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/Factory",
+        "effect_scale": 0.75
+      }
+    },
+    "feature_requirements": [
+      "metal_spot"
+    ],
+    "force_snap_to_feature_orientation": true,
+    "lamps": [
+      {
+        "offset": [
+          -0.72,
+          -1.922,
+          6.515
+        ],
+        "radius": 2.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 1.0
+      }
+    ],
+    "max_health": 1500,
+    "mesh_bounds": [
+      9.2,
+      10.0407,
+      23.5
+    ],
+    "model": [
+      {
+        "layer": "WL_LandHorizontal",
+        "filename": "/pa/units/land/ft_grinder/ft_grinder.papa",
+        "animations": {
+          "idle": "/pa/units/land/ft_grinder/ft_grinder_idle.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json"
+      },
+      {
+        "layer": "WL_WaterSurface",
+        "filename": "/pa/units/land/ft_grinder/ft_grinder.papa",
+        "animations": {
+          "idle": "/pa/units/land/ft_grinder/ft_grinder_idle.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json"
+      }
+    ],
+    "placement_size": [
+      20,
+      20
+    ],
+    "production": {
+      "metal": 12
+    },
+    "recon": {
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 75
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 75
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 24.0
+    },
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "unit_name": "!Metal Extractor",
+    "unit_types": [
+      "UNITTYPE_Custom3",
+      "UNITTYPE_Structure",
+      "UNITTYPE_Basic",
+      "UNITTYPE_MetalProduction",
+      "UNITTYPE_CmdBuild",
+      "UNITTYPE_FabBuild",
+      "UNITTYPE_Economy",
+      "UNITTYPE_FabOrbBuild"
+    ]
+  }

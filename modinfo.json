@@ -1,0 +1,29 @@
+{
+    "context": "server",
+    "identifier": "future-tech",
+    "display_name": "Future Tech",
+    "description": "Adds a min faction based on futuristic tech",
+    "author": "Taiga",
+    "version": "1.0",
+    "build": "115626",
+    "date": "2023-02-14",
+    "signature": "not yet implemented",
+    "forum": "",
+    "icon": "",
+    "priority": 100,
+    "category": [
+        "titans", "in-game","server"
+        
+    ],
+    
+    "scenes": {
+		
+		"icon_atlas": [
+			"coui://ui/mods/future_tech/icon_atlas.js"
+		],
+		"shared_build":[
+			"coui://ui/mods/future_tech/shared_build.js"
+		]
+		
+	}
+}
