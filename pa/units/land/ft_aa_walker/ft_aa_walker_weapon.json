@@ -18,5 +18,11 @@
       "WL_Air"
     ],
     "yaw_range": 180,
-    "yaw_rate": 360
+    "yaw_rate": 360,
+    "target_priorities": [
+      "Air",
+      "Mobile - Air",
+      "Structure - Wall",
+      "Wall"
+    ]
   }
