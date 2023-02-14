@@ -77,7 +77,7 @@
       3.3
     ],
     "model": {
-      "filename": "/pa/units/land/tank_light_laser/tank_light_laser.papa",
+      "filename": "/pa/units/land/ft_standard_tank/ft_standard_tank.papa",
       "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
       "arrows": 5
     },
