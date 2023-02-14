@@ -1,19 +1,73 @@
 
 {
-    "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
-    "damage": 20,
-    "fx_trail": {
-      "filename": "/pa/effects/specs/bullet_proj_trail.pfx",
-      "offset": [
-        0.0,
-        0.0,
-        0.0
-      ]
+  "armor_damage_map": {
+    "AT_Vehicle": 0.5,
+    "AT_Bot": 0.5,
+    "AT_Naval": 0.5,
+    "AT_Commander": 0.5,
+    "AT_Hover": 0.5,
+    "AT_Structure": 0.5
+  },
+  "audio_loop": "/SE/Movement/missile/catapult_missile_fly_loop",
+  "base_spec": "/pa/ammo/base_shell/base_shell.json",
+  "burn_damage": 0,
+  "burn_radius": 0,
+  "cruise_height": 20,
+  "damage": 15,
+  "damage_volume": {
+    "initial_radius": 20.0,
+    "radius_velocity": 200.0,
+    "radius_accel": -40.0,
+    "delay": 0,
+    "burnable_remove_radius": 0.0
+  },
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/cannon_uber",
+      "effect_spec": "/pa/units/land/tank_flak/flak_tank_explosion.pfx"
+    }
+  },
+  "flight_type": "Staged",
+  "full_damage_splash_radius": 5,
+  "fx_trail": {
+    "filename": "/pa/effects/specs/shell_proj_trail.pfx",
+    "offset": [
+      0.0,
+      0.8,
+      0.0
+    ]
+  },
+  "influence_radius": 400,
+  "initial_velocity": 200.0,
+  "lifetime": 30,
+  "max_velocity": 200.0,
+  "physics": {
+    "radius": 1,
+    "gravity_scalar": 5,
+    "ignore_gravity": true,
+    "add_to_spatial_db": false
+  },
+  "splash_damage": 15,
+  "splash_radius": 15,
+  "stages": [
+    {
+      "ignores_gravity": true,
+      "ignores_LOS": true,
+      "stage_duration": 20,
+      "stage_turn_rate": 0,
+      "rotates_to_velocity": true
     },
-    "initial_velocity": 130.0,
-    "lifetime": 1.0,
-    "max_velocity": 130.0,
-    "model": null,
-    "splash_damage": 10,
-    "splash_radius": 3
+    {
+      "ignores_gravity": false,
+      "apply_thrust": false,
+      "ignores_LOS": true,
+      "stage_duration": 300,
+      "stage_turn_rate": 0,
+      "rotates_to_velocity": true
+    },
+    {
+      "die_here": true
+    }
+  ],
+  "turn_rate": 30
 }
