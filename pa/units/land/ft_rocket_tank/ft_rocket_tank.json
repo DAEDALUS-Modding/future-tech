@@ -89,7 +89,8 @@
         "muzzle_bone": [
             "socket_rocket_1",
             "socket_rocket_2"
-          ]
+          ],
+        "secondary_weapon":true
       }
     ],
     "transportable": {
@@ -104,5 +105,13 @@
       "UNITTYPE_Artillery",
       "UNITTYPE_Advanced",
       "UNITTYPE_FabBuild"
+    ],
+    "command_caps": [
+      "ORDER_Move",
+      "ORDER_Patrol",
+      "ORDER_Attack",
+      "ORDER_Assist",
+      "ORDER_Use",
+      "ORDER_FireSecondaryWeapon"
     ]
   }
