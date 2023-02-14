@@ -54,17 +54,17 @@
     "model": [
       {
         "layer": "WL_LandHorizontal",
-        "filename": "/pa/units/land/ft_grinder/ft_grinder_mex.papa",
+        "filename": "/pa/units/land/ft_grinder_mex/ft_grinder_mex.papa",
         "animations": {
-          "idle": "/pa/units/land/ft_grinder/ft_grinder_mex_idle.papa"
+          "idle": "/pa/units/land/ft_grinder_mex/ft_grinder_mex_idle.papa"
         },
         "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json"
       },
       {
         "layer": "WL_WaterSurface",
-        "filename": "/pa/units/land/ft_grinder/ft_grinder_mex.papa",
+        "filename": "/pa/units/land/ft_grinder_mex/ft_grinder_mex.papa",
         "animations": {
-          "idle": "/pa/units/land/ft_grinder/ft_grinder_mex_idle.papa"
+          "idle": "/pa/units/land/ft_grinder_mex/ft_grinder_mex_idle.papa"
         },
         "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json"
       }
