@@ -56,7 +56,7 @@
         "idle": "/pa/units/land/ft_aa_walker/ft_aa_walker_idle.papa"
       },
       "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
-      "walk_speed": 12
+      "walk_speed": 7
     },
     "navigation": {
       "type": "amphibious",
@@ -66,7 +66,7 @@
       "turn_speed": 360
     },
     "physics": {
-      "radius": 2.0
+      "radius": 4.0
     },
     "recon": {
       "observer": {
