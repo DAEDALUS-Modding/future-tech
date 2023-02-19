@@ -88,14 +88,14 @@
     },
     "tools": [
       {
-        "spec_id": "/pa/units/land/ft_sniper_tank/ft_sniper_tank_tool_weapon.json",
+        "spec_id": "/pa/units/land/ft_sniper_tank/ft_sniper_tank_weapon.json",
         "aim_bone": "bone_turret",
         "muzzle_bone": "socket_muzzle",
         "primary_weapon": true
 
       },
       {
-        "spec_id": "/pa/units/land/ft_sniper_tank/ft_sniper_tank_tool_weapon_alt.json",
+        "spec_id": "/pa/units/land/ft_sniper_tank/ft_sniper_tank_weapon_alt.json",
         "aim_bone": "bone_turret",
         "muzzle_bone": "socket_muzzle",
         "secondary_weapon":true

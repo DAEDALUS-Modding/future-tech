@@ -128,7 +128,7 @@
           ]
       },
       {
-        "spec_id": "/pa/units/land/ft_fabricator/ft_fabricator_tool_weapon.json",
+        "spec_id": "/pa/units/land/ft_fabricator/ft_fabricator_weapon.json",
         "aim_bone": "bone_turret",
         "muzzle_bone": [
             "socket_laser_left",

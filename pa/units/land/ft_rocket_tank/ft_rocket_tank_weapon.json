@@ -11,7 +11,7 @@
     "firing_standard_deviation": 10,
     "carpet_fire": true,
     "carpet_wait_for_full_ammo": true,
-    "max_firing_velocity": 10000,
+    "max_firing_velocity": 800,
     "max_range": 300,
     "min_firing_velocity": 10,
     "pitch_range": 140,

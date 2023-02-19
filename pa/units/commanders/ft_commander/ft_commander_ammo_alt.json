@@ -11,8 +11,8 @@
     },
     "full_damage_splash_radius": 0,
     "influence_radius": 400,
-    "initial_velocity": 150.0,
-    "max_velocity": 400.0,
+    "initial_velocity": 50.0,
+    "max_velocity": 150.0,
     "lifetime": 30,
     "model": {
       "filename": "/pa/units/air/unit_shell_small/unit_shell_small.papa"

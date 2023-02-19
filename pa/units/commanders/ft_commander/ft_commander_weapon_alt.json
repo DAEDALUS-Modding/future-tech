@@ -10,7 +10,13 @@
     "max_range": 200,
     "pitch_range": 90,
     "pitch_rate": 360,
+    "arc_type": "ARC_High",
     "rate_of_fire": 1.0,
+    "physics": {
+      "radius": 1,
+      "gravity_scalar": 1,
+      "add_to_spatial_db": false
+    },
     "target_layers": [
       "WL_LandHorizontal",
       "WL_WaterSurface",
